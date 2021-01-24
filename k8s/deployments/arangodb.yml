@@ -1,0 +1,11 @@
+apiVersion: "database.arangodb.com/v1alpha"
+kind: "ArangoDeployment"
+metadata:
+  name: "arangodb"
+spec:
+  mode: Single
+  image: arangodb/arangodb:3.7.6
+  externalAccess:
+    type: LoadBalancer
+  tls:
+    caSecretName: None

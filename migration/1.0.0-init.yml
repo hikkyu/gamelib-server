@@ -1,0 +1,5 @@
+database: my-database
+
+create:
+  collection:
+    - name: games
